@@ -10,6 +10,6 @@ The installation process is very simple! All you have to do is grab the module a
 
 _Roblox Studio workflow_:
 
-1. Get [I'm an inline-style link with title](https://www.google.com "Projectile Cast") from the Roblox libaray.
+1. Get [Projectile Cast"](https://www.google.com) from the Roblox libaray.
 2. Add it into your project, and drop the module into the Replicated Storage.
 3. All done!
