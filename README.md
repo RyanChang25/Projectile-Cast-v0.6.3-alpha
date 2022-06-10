@@ -50,7 +50,9 @@ ProjectileCast.Client.SetIgnoreList({Character, workspace.CurrentCamera})
 
 Mouse.Button1Down:Connect(function(gameProcessed)
     if gameProcessed then return end
-    ProjectileCast.Client.CastSingle({StartPoint = Character.Head, EndPoint = Mouse.Hit.Position})
+    ProjectileCast.Client.CastSingle({
+        StartPoint = Character.Head, -->>: StartPoint of bullet instance
+        EndPoint = Mouse.Hit.Position}) -->>: EndPoint of bullet instance
 
     -->>: Startpoint, and Endpoint is required for the module to function.
 end)
@@ -65,7 +67,9 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 In this example, we go more in depth with the usage of the CastSingle function.
 
 ```lua
-ProjectileCast.Client.CastSingle({StartPoint = Character.Head, EndPoint = Mouse.Hit.Position,
+ProjectileCast.Client.CastSingle({
+StartPoint = Character.Head, -->>: StartPoint of bullet instance
+EndPoint = Mouse.Hit.Position, -->>: EndPoint of bullet instance
 Damage = 10, -->>: Damage of bullet (Default: 5)
 Velocity = 5, -->>: Velocity of bullet (Default: 3)
 Drop = 0.005, -->>: Bullet Drop (Default: 0.015)
