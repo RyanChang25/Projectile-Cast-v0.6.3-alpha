@@ -2,7 +2,7 @@
 
 # Projectile Cast v.1.3.0
 
-\*_Note: (This module is currently in its early phase, so expect bugs.)_
+\*_Note: (This module is currently in its early phase, so expect bugs and breaking changes.)_
 
 **Projectile Cast** is a open-sourced module for all your projectile needs! It uses OOP, Raycasting, and a physics algorithm to implement a very smooth projectile drop. The API also allows its projectiles to be highly customizable, and have interchangeable properties on the go.
 
