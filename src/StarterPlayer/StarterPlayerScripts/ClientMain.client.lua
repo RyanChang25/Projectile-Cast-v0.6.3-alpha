@@ -16,4 +16,5 @@ Mouse.Button1Down:Connect(function(gameProcessed)
 
     -->>: Allows you to customize your projectiles further. If you're interested look at the table documentation below!
     -->>: {StartPoint, EndPoint, Damage, Velocity, Drop, Despawn, XOffset, YOffset, ZOffset, Decal, Bullet, Sound}
+    
 end)
