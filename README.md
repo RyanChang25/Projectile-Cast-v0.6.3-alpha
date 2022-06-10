@@ -95,4 +95,4 @@ Sets a list of instances that the raycast from the projectile will ignore.
 
 #### `ProjectileCast.Client.SetBulletParent()`
 
-Sets the parent of the projectile objects. Default will be `workspace.Camera`.
+Sets the parent of the projectile objects. Default will be `workspace.Camera`
