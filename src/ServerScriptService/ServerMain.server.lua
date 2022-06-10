@@ -1,6 +1,0 @@
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
-
-ProjectileCast.Server.SetRemotes()
-
-ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "FastZombie"})
