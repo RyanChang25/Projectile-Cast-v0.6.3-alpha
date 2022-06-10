@@ -20,7 +20,7 @@ The basic usage of Projectile Cast is very simple. Since most of the tinkering i
 
 The most basic usage would look as such:
 
-`Server Script in ServerScriptService`
+1. Create a Server Script in `ServerScriptService`
 
 ```
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
