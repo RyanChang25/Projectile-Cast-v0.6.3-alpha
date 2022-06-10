@@ -1,6 +1,6 @@
-## API Documentation
+# API Documentation
 
-### **Client Side API**
+## **Client Side API**
 
 #### `ProjectileCast.Client.CastSingle({})`
 
@@ -46,7 +46,7 @@ ProjectileCast.Client.SetBulletParent(workspace.MyBulletFolder)
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
-### **Server Side API**
+## **Server Side API**
 
 #### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
 
