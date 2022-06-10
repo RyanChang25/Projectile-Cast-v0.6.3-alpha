@@ -87,4 +87,4 @@ Sound = 168143115}) -->>: Sound ID of gun shot. (Default: 168143115)
 
 #### `ProjectileCast.Client.CastMultiple({})`
 
-Works similarily to `.CastSingle()` expect it will shoot multiple projectiles at once. Think a shotgun!
+Works similarily to `.CastSingle({})` method expect it will shoot multiple projectiles at once. Think a shotgun!
