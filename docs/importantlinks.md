@@ -1,4 +1,4 @@
-## Important Links
+# Important Links
 
 Some important concepts that was used to create Projectile Cast. Read more about them in the links below!
 
