@@ -69,6 +69,7 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 #### `ProjectileCast.Client.CastSingle({})`
 
 ```lua
+-- Example Code
 ProjectileCast.Client.CastSingle({
 StartPoint = Character.Head, -->>: StartPoint of bullet instance
 EndPoint = Mouse.Hit.Position, -->>: EndPoint of bullet instance
@@ -93,14 +94,29 @@ Property indexs are the same as the `.CastSingle({})` method except multiple pro
 
 #### `ProjectileCast.Client.SetIgnoreList({})`
 
+```lua
+-- Example Code
+ProjectileCast.Client.SetIgnoreList({Character, workspace.Camera, workspace.IgnorePartFolder, (...)})
+```
+
 Sets a list of instances that the raycast from the projectile will ignore.
 
 #### `ProjectileCast.Client.SetBulletParent()`
+
+```lua
+-- Example Code
+ProjectileCast.Client.SetBulletParent(workspace.MyBulletFolder)
+```
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
 ### **Server Side API**
 
 #### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
+
+```lua
+-- Example Code
+ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Fast Zombie", "Wizard Zombie", (...)})
+```
 
 This will set the targets the projectile will deal damage to.
