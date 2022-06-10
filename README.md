@@ -60,13 +60,11 @@ end)
 
 And that's it! The Projectile Cast should have instanced a bullet object from your characters head that flies towards your mouse position.
 
-This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed the API documentation of the module functionality below.
+This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed the API documentation with some code examples of the module functionality below.
 
-## API Documentation
+## API Documentation (With examples)
 
-In this example, we go more in depth with the usage of the CastSingle function.
-
-ProjectileCast.Client.CastSingle({StartPoint, EndPoint, Damage, Velocity, Drop, Despawn, XOffset, YOffset, ZOffset, Decal, Bullet, Sound})
+`ProjectileCast.Client.CastSingle({})`
 
 ```lua
 ProjectileCast.Client.CastSingle({
