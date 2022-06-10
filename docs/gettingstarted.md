@@ -1,4 +1,4 @@
-## Getting Started
+# Getting Started
 
 The basic usage of Projectile Cast is very simple because most of the tinkering is already done under the hood, so very little code is required to get started.
 
