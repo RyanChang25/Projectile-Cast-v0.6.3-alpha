@@ -10,6 +10,10 @@ https://devforum.roblox.com/t/all-about-object-oriented-programming/8585
 
 https://devforum.roblox.com/t/best-methods-to-handle-arrow-projectiles/239463/20
 
+## Projectile Cast Module
+
+https://www.roblox.com/library/9866876932/Projectile-Cast-v0-4-1
+
 ## Game Demo
 
 https://www.roblox.com/games/9058545095/Magic-Zombie-Mayhem
