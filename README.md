@@ -60,9 +60,9 @@ end)
 
 And that's it! The Projectile Cast should have instanced a bullet object from your characters head that flies towards your mouse position.
 
-This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed more in-depth examples of the modules functionality below.
+This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed the API documentation of the module functionality below.
 
-## Examples
+## API Documentation
 
 In this example, we go more in depth with the usage of the CastSingle function.
 
