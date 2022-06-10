@@ -1,6 +1,6 @@
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/Ryanisawesome25.svg?style=social&label=Follow%20%40Ryanisawesome25)](https://twitter.com/Ryanisawesome25)
 
-# Projectile Cast v.0.4.1
+# Projectile Cast v0.4.1
 
 \*_Note: (This module is currently in its early phase, so expect bugs and breaking changes.)_
 
