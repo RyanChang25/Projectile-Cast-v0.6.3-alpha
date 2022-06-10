@@ -20,9 +20,9 @@ The basic usage of Projectile Cast is very simple. Since most of the tinkering i
 
 The most basic usage would look as such:
 
-```
 `Server Script in ServerScriptService`
 
+```
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
@@ -30,6 +30,6 @@ ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-c
 
 ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Other Zombie"}) -->>: Add your tagged targets here
 
--->>: I personally use this [Tag Editor plugin.](https://www.roblox.com/library/948084095/Tag-Editor)
-
 ```
+
+I personally use this [Tag Editor plugin.](https://www.roblox.com/library/948084095/Tag-Editor)
