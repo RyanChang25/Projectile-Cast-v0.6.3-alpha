@@ -16,8 +16,8 @@
 
 ### Projectile Cast v.1.0.0
 
-`Projectile Cast finally modularized, integrated out of Knit as a stand alone module.`
+`Projectile Cast finally modularized and integrated as a stand alone module.`
 
 ### Projectile Cast v.0.1.0
 
-`Projectile Cast system was un-modularized, and was used with the Knit Framework.`
+`Projectile Cast system was un-modularized, and was used with other game frameworks.`
