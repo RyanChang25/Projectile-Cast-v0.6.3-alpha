@@ -16,7 +16,9 @@ _Roblox Studio workflow_:
 
 ## Basic Usage
 
-The basic usage of Projectile Cast is very simple. Since most of the tinkering is already done under the hood, very little code is required to get started.
+The basic usage of Projectile Cast is very simple. Since most of the tinkering is already done under the hood, so very little code is required to get started.
+
+However, there are few things that is required before we begin. This module relies on the CollectionService to set and get the Tags from targets. You could tag your targets manually, but I personally use this [Tag Editor plugin](https://www.roblox.com/library/948084095/Tag-Editor) (Highly recommend).
 
 The most basic usage would look as such:
 
@@ -31,5 +33,3 @@ ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-c
 ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Other Zombie"}) -->>: Add your tagged targets here
 
 ```
-
-I personally use this [Tag Editor plugin.](https://www.roblox.com/library/948084095/Tag-Editor)
