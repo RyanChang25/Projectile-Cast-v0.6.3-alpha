@@ -62,7 +62,7 @@ And that's it! The Projectile Cast should have instanced a bullet object from yo
 
 This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed the API documentation with some code examples of the module functionality below.
 
-## API Documentation (With examples)
+## API Documentation
 
 ### `ProjectileCast.Client.CastSingle({})`
 
