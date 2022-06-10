@@ -24,7 +24,8 @@ However, there is one thing that should be noted before we begin. This module re
 
 The most basic usage would look as such:
 
-1. Create a Server Script in `ServerScriptService` (Or use the ServerMain script in the /Examples folder in v0.4.1 and above.)
+1. Create a Server Script in `ServerScriptService`
+   _(You can also just use the `ServerMain` in the /Examples folder in v0.4.1 and above.)_
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -35,7 +36,8 @@ ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-c
 ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", "ExampleTarget2"}) -->>: Replace my ExampleTargets with your own tagged targets.
 ```
 
-2. Create a local Script in `StarterPlayer\StarterPlayerScripts` (Or use the ClientMain script in the /Examples folder in v0.4.1 and above.)
+2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
+   _(You can also just use the `ClientMain` in the /Examples folder in v0.4.1 and above.)_
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
