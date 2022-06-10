@@ -54,7 +54,8 @@ Mouse.Button1Down:Connect(function(gameProcessed)
 end)
 ```
 
-And that's it! The Projectile Cast should have instanced a bullet object from your head that flies to your Mouse position.
-This pretty much concludes the basic functionality of Projectile Cast. If you're interested, there are more complex examples of the functionality below.
+And that's it! The Projectile Cast should have instanced a bullet object from your characters head that flies towards your mouse position.
+
+This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed complex examples of the modules functionality below.
 
 ## Examples
