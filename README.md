@@ -32,7 +32,7 @@ local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
 ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-client communication
 
-ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Other Zombie"}) -->>: Add your tagged targets here
+ProjectileCast.TargetSettings.SetTaggedTargets({"Target1", "Target2"}) -->>: Add your tagged targets here
 ```
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
@@ -64,7 +64,7 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 
 ## API Documentation
 
-### Client Side
+### **Client Side**
 
 #### `ProjectileCast.Client.CastSingle({})`
 
@@ -99,7 +99,7 @@ Sets a list of instances that the raycast from the projectile will ignore.
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
-### Server Side
+### **Server Side**
 
 #### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
 
