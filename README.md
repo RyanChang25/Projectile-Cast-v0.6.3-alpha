@@ -64,6 +64,8 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 
 ## API Documentation
 
+### Client Side
+
 #### `ProjectileCast.Client.CastSingle({})`
 
 ```lua
