@@ -31,7 +31,6 @@ local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-client communication
 
 ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Other Zombie"}) -->>: Add your tagged targets here
-
 ```
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
@@ -54,3 +53,8 @@ Mouse.Button1Down:Connect(function(gameProcessed)
     -->>: Startpoint, and Endpoint is required for the module to function.
 end)
 ```
+
+And that's it! The Projectile Cast should have instanced a bullet object from your head that flies to your Mouse position.
+This pretty much concludes the basic functionality of Projectile Cast. If you're interested, there are more complex examples of the functionality below.
+
+## Examples
