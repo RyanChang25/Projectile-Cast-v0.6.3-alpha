@@ -1,6 +1,6 @@
 ## Changelogs
 
-### Projectile Cast v.1.0.0
+### Projectile Cast v.0.4.1
 
 `Integrated into Roblox library for Roblox Studio workflow support.`
 
