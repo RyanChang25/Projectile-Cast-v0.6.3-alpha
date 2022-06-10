@@ -1,7 +1,7 @@
 # Project place file
 /Projectile Cast Module v.1.0.rbxlx
-src/ServerScriptService
-src/StarterPlayer
+src/ServerScriptService/
+src/StarterPlayer/
 
 # Roblox Studio lock files
 /*.rbxlx.lock
