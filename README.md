@@ -87,4 +87,12 @@ Sound = 168143115}) -->>: Sound ID of gun shot. (Default: 168143115)
 
 #### `ProjectileCast.Client.CastMultiple({})`
 
-Property indexs are the same as the `.CastSingle({})` method expect it will shoot multiple projectiles at once.
+Property indexs are the same as the `.CastSingle({})` method except multiple projectiles will be fired at once.
+
+#### `ProjectileCast.Client.SetIgnoreList({})`
+
+Sets a list of instances that the raycast from the projectile will ignore.
+
+#### `ProjectileCast.Client.SetBulletParent()`
+
+Sets the parent of the projectile objects. Default will be `workspace.Camera`.
