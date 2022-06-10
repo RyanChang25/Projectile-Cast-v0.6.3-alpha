@@ -26,7 +26,7 @@ The most basic usage would look as such:
 
 1. Create a Server Script in `ServerScriptService`
 
-```
+```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
@@ -37,7 +37,7 @@ ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Other Zombie"}) -->>:
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
 
-```
+```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 local Player = game.Players.LocalPlayer
@@ -61,3 +61,9 @@ And that's it! The Projectile Cast should have instanced a bullet object from yo
 This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have listed more in-depth examples of the modules functionality below.
 
 ## Examples
+
+In this example, we go more in depth with the usage of the CastSingle function.
+
+```lua
+ProjectileCast.Client.CastSingle({StartPoint = Character.Head, EndPoint = Mouse.Hit.Position, Damage = 10, Velocity = 5, Drop = 0.005, Despawn = 3, XOffset = 0, YOffset = 0, ZOffset = 0, Decal = 2859765706, Bullet, Sound})
+```
