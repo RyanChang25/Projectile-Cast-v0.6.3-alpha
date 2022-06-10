@@ -119,4 +119,4 @@ Sets the parent of the projectile objects. Default will be `workspace.Camera`
 ProjectileCast.TargetSettings.SetTaggedTargets({"Zombie", "Fast Zombie", "Wizard Zombie", (...)})
 ```
 
-This will set the targets the projectile will deal damage to.
+This will set the tagged targets the projectile will deal damage to.
