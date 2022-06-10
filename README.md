@@ -16,7 +16,7 @@ _Roblox Studio workflow_:
 
 ## Getting Started
 
-The basic usage of Projectile Cast is very simple, and since most of the tinkering is already done under the hood very little code is required to get started.
+The basic usage of Projectile Cast is very simple because most of the tinkering is already done under the hood, so very little code is required to get started.
 
 However, there is one thing that should be noted before we begin. This module relies on the `CollectionService` to set and get the Tags from targets. This means you will need to tag your targets for the module to work. You could manually do it, but I personally use this [Tag Editor plugin](https://www.roblox.com/library/948084095/Tag-Editor) which I **highly recommend.**
 
