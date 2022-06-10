@@ -1,23 +1,23 @@
-## Changelogs
+# Changelogs
 
-### Projectile Cast v0.4.1
+## v0.4.1
 
-`Integrated into Roblox library for Roblox Studio workflow support.`
+- Integrated into Roblox library for Roblox Studio workflow support.
 
-### Projectile Cast v0.4.0
+## v0.4.0
 
-`Added assets folder to hold FX, Remote Events, and Sounds for more convenient usage.`
+- Added assets folder to hold FX, Remote Events, and Sounds for more convenient usage.
 
-### Projectile Cast v0.3.0
+## v0.3.0
 
-`Added new method to support multiple projectile casts.`
+- Added new method to support multiple projectile casts.
 
-`Added more customizable index properties for projectiles.`
+- Added more customizable index properties for projectiles.
 
-### Projectile Cast v0.2.0
+## v0.2.0
 
-`Projectile Cast finally modularized and integrated as a stand alone module.`
+- Projectile Cast finally modularized and integrated as a stand alone module.
 
-### Projectile Cast v0.1.0
+## v0.1.0
 
-`Projectile Cast system was un-modularized, and was used with other game frameworks.`
+- Projectile Cast system was un-modularized, and was used with other game frameworks.
