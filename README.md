@@ -26,9 +26,10 @@ The most basic usage would look as such:
 
 1. Create a Server Script in `ServerScriptService`
 
-_(You can also just use the ServerMain Script in the /Examples folder in v0.4.1 and above.)_
-
 ```lua
+
+-- _(You can also use the ServerMain Script in the /Examples folder in v0.4.1 and above.)_
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
@@ -39,9 +40,10 @@ ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", "ExampleTarget
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
 
-_(You can also just use the ClientMain Localscript in the /Examples folder in v0.4.1 and above.)_
-
 ```lua
+
+-- _(You can also use the ClientMain Localscript in the /Examples folder in v0.4.1 and above.)_
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 local Player = game.Players.LocalPlayer
