@@ -66,6 +66,8 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 
 In this example, we go more in depth with the usage of the CastSingle function.
 
+ProjectileCast.Client.CastSingle({StartPoint, EndPoint, Damage, Velocity, Drop, Despawn, XOffset, YOffset, ZOffset, Decal, Bullet, Sound})
+
 ```lua
 ProjectileCast.Client.CastSingle({
 StartPoint = Character.Head, -->>: StartPoint of bullet instance
