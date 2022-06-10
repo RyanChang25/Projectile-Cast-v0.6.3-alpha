@@ -64,7 +64,7 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 
 ## API Documentation
 
-### **Client Side**
+### **Client Side API**
 
 #### `ProjectileCast.Client.CastSingle({})`
 
@@ -99,7 +99,7 @@ Sets a list of instances that the raycast from the projectile will ignore.
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
-### **Server Side**
+### **Server Side API**
 
 #### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
 
