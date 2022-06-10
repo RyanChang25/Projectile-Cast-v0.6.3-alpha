@@ -84,3 +84,7 @@ Sound = 168143115}) -->>: Sound ID of gun shot. (Default: 168143115)
 -- You are not required to use all index properties of the table when using .CastSingle() method.
 -- Use whichever index property you see fit in your situation.
 ```
+
+#### `ProjectileCast.Client.CastMultiple({})`
+
+This works similarily to .CastSingle() expect it will shoot multiple projectiles (4 maximum at the moment) at once. Think a shotgun!
