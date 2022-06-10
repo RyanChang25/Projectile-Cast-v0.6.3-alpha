@@ -98,3 +98,9 @@ Sets a list of instances that the raycast from the projectile will ignore.
 #### `ProjectileCast.Client.SetBulletParent()`
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
+
+### Server Side
+
+#### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
+
+This will set the targets the projectile will deal damage to.
