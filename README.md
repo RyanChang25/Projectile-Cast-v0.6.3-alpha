@@ -54,7 +54,7 @@ Mouse.Button1Down:Connect(function(gameProcessed)
         StartPoint = Character.Head, -->>: StartPoint of bullet instance
         EndPoint = Mouse.Hit.Position}) -->>: EndPoint of bullet instance
 
-    -->>: Startpoint, and Endpoint is required for the .CastSingle() method to function.
+    -->>: Startpoint, and Endpoint is required for the .CastSingle({}) method to function.
 end)
 ```
 
