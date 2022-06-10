@@ -64,7 +64,7 @@ This pretty much concludes the basic functionality of Projectile Cast, but the f
 
 ## API Documentation (With examples)
 
-###ProjectileCast.Client.CastSingle({})
+### `ProjectileCast.Client.CastSingle({})`
 
 ```lua
 ProjectileCast.Client.CastSingle({
