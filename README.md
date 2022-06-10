@@ -81,5 +81,6 @@ Decal = 2859765706, -->>: Decal of bullet hole (Default: 4784881970)
 Bullet = game.ReplicatedStorage.Bullet:Clone() , -->>: Get specific bullet model if applicable. (Default: Bullet within module)
 Sound = 168143115}) -->>: Sound ID of gun shot. (Default: 168143115)
 
--- You are not required to use all indexes of the table when using .CastSingle() function. Use whichever index you see fit in your situation.
+-- You are not required to use all index properties of the table when using .CastSingle() function.
+-- Use whichever index property you see fit in your situation.
 ```
