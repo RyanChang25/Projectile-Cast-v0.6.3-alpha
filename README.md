@@ -32,7 +32,7 @@ local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
 ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-client communication
 
-ProjectileCast.TargetSettings.SetTaggedTargets({"Target1", "Target2"}) -->>: Add your tagged targets here
+ProjectileCast.TargetSettings.SetTaggedTargets({"Target1", "Target2", (...)}) -->>: Add your tagged targets here
 ```
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
