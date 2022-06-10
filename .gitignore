@@ -3,7 +3,12 @@
 /src/ServerScriptService
 /src/StarterPlayer
 
+# you can skip this first one if it is not already excluded by prior patterns
+!src/
+
+src/*
 !src/ReplicatedStorage/
+
 src/ReplicatedStorage/*
 !src/ReplicatedStorage/ProjectileCast/
 
