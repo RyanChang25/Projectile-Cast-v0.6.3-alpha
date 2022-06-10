@@ -3,6 +3,10 @@
 /src/ServerScriptService
 /src/StarterPlayer
 
+!src/ReplicatedStorage/
+src/ReplicatedStorage/*
+!src/ReplicatedStorage/ProjectileCast/
+
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
