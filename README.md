@@ -1,5 +1,3 @@
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/Ryanisawesome25.svg?style=social&label=Follow%20%40Ryanisawesome25)](https://twitter.com/Ryanisawesome25)
-
 # Projectile Cast v0.4.1
 
 \*_Note: (This module is currently in its early phase, so expect bugs and breaking changes.)_
@@ -66,3 +64,5 @@ end)
 And that's it! The Projectile Cast should have instanced a bullet object from your characters head that flies towards your mouse position.
 
 This pretty much concludes the basic functionality of Projectile Cast, but the fun doesn't end here! If you're interested, I have the API documentation with some code examples in `/docs` of thie repository.
+
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/Ryanisawesome25.svg?style=social&label=Follow%20%40Ryanisawesome25)](https://twitter.com/Ryanisawesome25)
