@@ -8,7 +8,7 @@
 	
 	Original Module - https://www.roblox.com/library/9866876932/Projectile-Cast
 	
-	** If anything is broken or you have any questions, please don't hesitate to message me! **
+	** If anything is broken or you have any questions, please don't hesitate to message me on Twitter or Discord! **
 
 --]]
 
