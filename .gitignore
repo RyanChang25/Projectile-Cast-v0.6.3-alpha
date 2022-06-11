@@ -12,5 +12,3 @@
 !/src/ReplicatedStorage
 /src/ReplicatedStorage/*
 !/src/ReplicatedStorage/ProjectileCast
-*.DS_Store
-*.gitignore
