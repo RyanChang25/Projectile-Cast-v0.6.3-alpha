@@ -10,9 +10,11 @@ https://www.roblox.com/library/9866876932/Projectile-Cast-v0-4-1
 
 https://devforum.roblox.com/t/all-about-object-oriented-programming/8585
 
-## DevForum Source
+## DevForum Sources
 
 https://devforum.roblox.com/t/best-methods-to-handle-arrow-projectiles/239463/20
+https://devforum.roblox.com/t/calculating-bullet-drop-and-trajectories/118370
+https://devforum.roblox.com/t/bullet-drop-travel-time-and-spread/379598/10
 
 ## Game Demo
 
