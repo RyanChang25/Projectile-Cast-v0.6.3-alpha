@@ -26,7 +26,7 @@ The most basic usage would look as such:
 
 1. Create a Server Script in `ServerScriptService`
 
-_(You can also use the ServerMain Script in the /Examples folder in v0.4.1 and above.)_
+_(You can also use the ServerMain Script in the /Examples folder in Release v0.4.1-alpha and above.)_
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -39,7 +39,7 @@ ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget", (...)}) -->>: R
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
 
-_(You can also use the ClientMain Localscript in the /Examples folder in v0.4.1 and above.)_
+_(You can also use the ClientMain Localscript in the /Examples folder in Release v0.4.1-alpha and above.)_
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
