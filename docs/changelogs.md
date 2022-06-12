@@ -6,7 +6,7 @@
 
 - Updated OOP syntax to be inlined with industry standard practices.
 
-- Added new index property `Color` in the `.CastSingle({})` method. Allows you to specify the color of the particles when hitting tagged targets.
+- Added new index property `Color` in the `.CastSingle({})` method. Allows you to specify the color of the particles when ray connects with tagged targets.
 
 ## v0.5.2-alpha
 
