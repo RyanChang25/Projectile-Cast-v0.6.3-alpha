@@ -156,11 +156,13 @@ function Client.updateBullets(s)
 			table.insert(remove, i) -->>: Tag bullet for removal
 
 		else
+
 			bullet.oldposition = bullet.position
 			if tick() > bullet.despawn then
 				table.insert(destroy, bullet.bullet) -->>: Tag bullet for destruction
 				table.insert(remove, i) -->>: Remove bullet for destruction
 			end	
+			
 		end
 
 	end
