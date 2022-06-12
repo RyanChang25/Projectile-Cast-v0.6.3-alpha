@@ -1,8 +1,8 @@
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/Ryanisawesome25.svg?style=social&label=Follow%20%40Ryanisawesome25)](https://twitter.com/Ryanisawesome25)
 
-# Projectile Cast (v0.5.2)
+# Projectile Cast (v0.5.2-alpha)
 
-\*_Note: (This module is still in its early phase, so expect bugs and breaking changes. Feel free to post any issues you find.)_
+\*_Note: (This module is still in its alpha phase, so expect bugs and breaking changes. Feel free to post any issues you find.)_
 
 **Projectile Cast** is a open-sourced module I developed for all your projectile needs! It uses OOP, Raycasting, and a physics algorithm to implement a very smooth projectile drop. The API also allows its projectiles to be highly customizable, and have interchangeable properties on the go.
 
