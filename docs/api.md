@@ -18,10 +18,12 @@ YOffset = 0, -->>: Y Offset of the bullet from origin point (Default: 0)
 ZOffset = 0, -->>: Z Offset of the bullet from origin point (Default: 0)
 Decal = 2859765706, -->>: Decal of bullet hole (Default: 4784881970)
 Bullet = game.ReplicatedStorage.Bullet:Clone() , -->>: Get specific bullet model if applicable. (Default: Bullet within module)
-Sound = 168143115}) -->>: Sound ID of gun shot. (Default: 168143115)
+Sound = 168143115 -->>: Sound ID of gun shot. (Default: 168143115)
+Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting target. (Default: Color3.fromRGB(255, 55, 55))
 
 -- You are not required to use all index properties of the table when using .CastSingle() method.
--- Use whichever index property you see fit in your situation.
+-- So use whichever index property that fits in your situation.
+
 ```
 
 #### `ProjectileCast.Client.CastMultiple({})`

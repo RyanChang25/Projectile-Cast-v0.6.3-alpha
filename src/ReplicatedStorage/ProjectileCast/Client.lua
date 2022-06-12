@@ -39,7 +39,7 @@ function Client.newProj(plr, projectileTable) -->>: Create projectile object
 	self.damage = projectileTable.Damage or 5
 	self.hit = false
 	self.emitDebris = projectileTable.EmitDebris or 3
-	self.color = projectileTable.Color or Color3.fromRGB(255, 56, 56)
+	self.color = projectileTable.Color or Color3.fromRGB(255, 55, 55)
 
 	self.bullet = projectileTable.Bullet ~= nil and projectileTable.Bullet:Clone() or script.Parent.Assets.FX:WaitForChild("Bullet"):Clone()
 	self.bullet.Parent = bulletParent
@@ -93,7 +93,7 @@ function Client.createBulletHole(id)
 	return bulletHole	
 end
 
-function Client.instanceVisualizedRay(bullet, distance)
+local function instanceVisualizedRay(bullet, distance)
 	if Visualize then
 		local VisualBullet = Instance.new("Part", workspace.Camera)
 		VisualBullet.Size = Vector3.new(0.25, 0.25, distance)
@@ -137,7 +137,7 @@ function Client.updateBullets(s)
 
 		local hit = workspace:FindPartOnRayWithIgnoreList(newray, bulletIgnoreList)
 
-		Client.instanceVisualizedRay(bullet, distance)
+		instanceVisualizedRay(bullet, distance)
 		
 		if hit and not hit:FindFirstAncestor(bullet.character.Name) then
 
