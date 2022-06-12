@@ -189,8 +189,8 @@ end
 
 function Client.Init()
 	
-	Client.SetIgnoreList(workspace.Camera, (...))
-	
+	Client.SetIgnoreList({workspace.Camera})
+
 	Client.SetTargetFilter(workspace.Camera)
 
 	Client.SetBulletParent(workspace.Camera)
