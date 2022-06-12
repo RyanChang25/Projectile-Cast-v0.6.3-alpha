@@ -1,6 +1,6 @@
 local TargetSettings = require(script.Parent.TargetSettings)
 local Debris = game:GetService("Debris")
-
+local Players = game:GetService("Players")
 local Server = {}
 
 function Server.SetRemotes()
@@ -22,7 +22,7 @@ function Server.SetRemotes()
 			hit.Parent:FindFirstChild("Humanoid"):TakeDamage(damage)
 		end
 	end)
-	
+
 end
 
 return Server

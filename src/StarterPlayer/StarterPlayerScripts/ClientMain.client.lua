@@ -6,7 +6,11 @@ local Mouse = Player:GetMouse()
 
 ProjectileCast.Client.Init()
 
-ProjectileCast.Client.SetIgnoreList({Character, workspace.CurrentCamera})
+ProjectileCast.Client.SetIgnoreList({workspace.Camera, (...)})
+
+ProjectileCast.Client.SetTargetFilter(workspace.Camera)
+
+ProjectileCast.Client.VisualizeCasts(true)
 
 Mouse.Button1Down:Connect(function(gameProcessed)
     if gameProcessed then return end

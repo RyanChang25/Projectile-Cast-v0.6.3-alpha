@@ -5,6 +5,7 @@ local destroy = {}
 local bullets = {}
 local bulletParent
 local Client = {}
+local Visualize = false
 Client.__index = Client
 
 function Client.CastSingle(projectileTable)
@@ -23,7 +24,7 @@ end
 function Client.newProj(plr, projectileTable) -->>: Create projectile object
 
 	local origin = CFrame.new(projectileTable.StartPoint.Position + Vector3.new(0,(projectileTable.YOffset or 0),0) + 
-		projectileTable.StartPoint.CFrame.lookVector * (projectileTable.ZOffset or -1), 
+		projectileTable.StartPoint.CFrame.lookVector * (projectileTable.ZOffset or 1), 
 		projectileTable.EndPoint) * CFrame.Angles(0,math.rad(projectileTable.XOffset or 0),0) 
 
 	local bulletComp = {}
@@ -108,6 +109,7 @@ function Client.updateBullets(s)
 		-->>: We then use vector 3 to lowered the bullet based on the drop property. We use laps so it iteratively moves down more over time.
 		
 		local bul = bullet.bullet
+		bul.Anchored = true
 		local distance = (bullet.oldposition.p - bullet.position.p).magnitude
 		-->>: Gets the old position to look at the new position so we can CFrame it to the right orientation
 		bul.CFrame = CFrame.new(bullet.oldposition.p, bullet.position.p) * CFrame.new(0,0, -distance * 0.5)
@@ -116,12 +118,21 @@ function Client.updateBullets(s)
 		
 		local newray = Ray.new(bullet.oldposition.p, (bullet.position.p - bullet.oldposition.p).unit * distance)
 		-->>: Creates a ray pointing in direction of the old position to the new position with the distance already defined
-		
+
 		local hit = workspace:FindPartOnRayWithIgnoreList(newray, bulletIgnoreList)
 
-		if hit and not bullet.hit then
-			
-			bullet.hit = true
+		if Visualize then
+			local VisualBullet = Instance.new("Part", workspace.Camera)
+			VisualBullet.Size = Vector3.new(0.25, 0.25, distance)
+			VisualBullet.Anchored = true
+			VisualBullet.CanCollide = false
+			VisualBullet.Color = Color3.fromRGB(255, 0, 0)
+			VisualBullet.CFrame = bullet.bullet.CFrame
+			VisualBullet.Name = "Visualize"
+			Debris:AddItem(VisualBullet, 5)
+		end
+		
+		if hit and not hit:FindFirstAncestor(bullet.character.Name) then
 
 			if TargetSettings.GetTaggedTargets(hit) then
 				if game.Players.LocalPlayer.Character == bullet.character then	
@@ -133,7 +144,7 @@ function Client.updateBullets(s)
 			else
 				bullet:WeldBulletHole(newray, hit.Color, bullet.decal)
 			end
-	
+			
 			table.insert(destroy, bullet.bullet)
 			table.insert(remove, i) --/tag bullet for removal
 
@@ -161,9 +172,18 @@ function Client.SetIgnoreList(list)
 	bulletIgnoreList = list
 end
 
+function Client.SetTargetFilter(targetFilter)
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	Mouse.TargetFilter = targetFilter	
+end
+
 function Client.SetBulletParent(parent)
 	bulletParent = parent
 	table.insert(bulletIgnoreList, parent)
+end
+
+function Client.VisualizeCasts(bool)
+	Visualize = bool
 end
 
 function Client.Init()

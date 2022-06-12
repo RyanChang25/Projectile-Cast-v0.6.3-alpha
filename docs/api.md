@@ -32,7 +32,7 @@ Property indexs are the same as the `.CastSingle({})` method except multiple pro
 
 ```lua
 -- Example Code
-ProjectileCast.Client.SetIgnoreList({Character, workspace.Camera, workspace.IgnorePartFolder, (...)})
+ProjectileCast.Client.SetIgnoreList({workspace.Camera (...)})
 ```
 
 Sets a list of instances that the raycast from the projectile will ignore.
@@ -45,6 +45,24 @@ ProjectileCast.Client.SetBulletParent(workspace.MyBulletFolder)
 ```
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
+
+#### `ProjectileCast.Client.VisualizeCasts(bool)`
+
+```lua
+-- Example Code
+ProjectileCast.Client.VisualizeCasts(true)
+```
+
+Allows you to visualize the ray casted (Will be performance heavy, so only turn on for debugging). Default will be false.
+
+#### `ProjectileCast.Client.SetTargetFilter(targetFilter) `
+
+```lua
+-- Example Code
+ProjectileCast.Client.SetTargetFilter(workspace.Camera)
+```
+
+Allows you to specify targets that will be ignored by the mouse when calculating Mouse.Hit and Mouse.Target.
 
 ## **Server Side API**
 
