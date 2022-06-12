@@ -34,7 +34,7 @@ ProjectileCast.Client.Init() -->>: Initializes client-side
 
 ProjectileCast.Client.SetIgnoreList({workspace.Camera, (...)}) -->>: Set raycast ignore list
 
-ProjectileCast.Client.SetTargetFilter(workspace.Camera) -->>: Set targetfilter
+ProjectileCast.Client.SetTargetFilter(workspace.Camera) -->>: Sets the mouse targetfilter
 
 ProjectileCast.Client.VisualizeCasts(false) -->>: Visualize the raycast (Set to true to enable.)
 
