@@ -21,7 +21,7 @@ function Client.CastMultiple(projectileTable)
 	end
 end
 
-function Client.newProj(plr, projectileTable) -->>: Create projectile object
+function Client.newProj(plr, projectileTable) -->>: Projectile class constructor
 
 	local self = setmetatable({}, Client)
 
@@ -162,7 +162,7 @@ function Client.updateBullets(s)
 				table.insert(destroy, bullet.bullet) -->>: Tag bullet for destruction
 				table.insert(remove, i) -->>: Remove bullet for destruction
 			end	
-			
+
 		end
 
 	end
