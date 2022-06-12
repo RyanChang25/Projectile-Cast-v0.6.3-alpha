@@ -1,5 +1,13 @@
 # Changelogs
 
+## v0.6.3-alpha
+
+- Fixed an `varargs` error in ProjectileCast.Client.lua.
+
+- Updated OOP syntax to be inlined with modern practices.
+
+- Added new index property `Color` in `.CastSingle({})` method. Allows you to specify the color of the particles when hitting tagged targets.
+
 ## v0.5.2-alpha
 
 - Fixed an Ray detection replicating issues.
