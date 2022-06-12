@@ -189,7 +189,13 @@ end
 
 function Client.Init()
 	
-	bulletParent = workspace.Camera
+	Client.SetIgnoreList(workspace.Camera, (...))
+	
+	Client.SetTargetFilter(workspace.Camera)
+
+	Client.SetBulletParent(workspace.Camera)
+
+	Client.VisualizeCasts(false)
 
 	script.Parent.Assets:WaitForChild("Remotes"):WaitForChild("RenderEvent").OnClientEvent:Connect(function(plr, projectileTable)
 		Client.newProj(plr, projectileTable)

@@ -2,7 +2,7 @@
     
 	-->>: PLACE THIS MODULE INTO REPLICATED STORAGE
 	
-	Coded and written by Ryanisawesome25 (21932606)
+	Coded and developed by Ryanisawesome25 (21932606)
 	
 	API Documentation can be found at - https://github.com/RyanChang25/Projectile-Cast
 	

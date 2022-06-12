@@ -6,13 +6,12 @@ local Mouse = Player:GetMouse()
 
 ProjectileCast.Client.Init()
 
-ProjectileCast.Client.SetIgnoreList({workspace.Camera, (...)})
-
-ProjectileCast.Client.SetTargetFilter(workspace.Camera)
-
-ProjectileCast.Client.VisualizeCasts(true)
-
 Mouse.Button1Down:Connect(function(gameProcessed)
     if gameProcessed then return end
-    ProjectileCast.Client.CastSingle({StartPoint = Character.Head, EndPoint = Mouse.Hit.Position, Damage = 10, Velocity = 5, Drop = 0.025})
+    ProjectileCast.Client.CastSingle({
+        StartPoint = Character.Head, 
+        EndPoint = Mouse.Hit.Position, 
+        Damage = 10, 
+        Velocity = 5, 
+        Drop = 0.025})
 end)

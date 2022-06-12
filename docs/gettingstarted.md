@@ -8,16 +8,20 @@ The most basic usage would look as such:
 
 1. Create a Server Script in `ServerScriptService`
 
+_(You can also use the ServerMain Script in the /Examples folder in v0.4.1 and above.)_
+
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
 ProjectileCast.Server.SetRemotes() -->>: Initializes remotes needed for server-client communication
 
-ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", "ExampleTarget2"}) -->>: Replace my ExampleTargets with your own tagged targets.
+ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", "ExampleTarget2"}) -->>: Replace my ExampleTarget(s) with your own tagged targets.
 ```
 
 2. Create a local Script in `StarterPlayer\StarterPlayerScripts`
+
+_(You can also use the ClientMain Localscript in the /Examples folder in v0.4.1 and above.)_
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -26,17 +30,23 @@ local Player = game.Players.LocalPlayer
 local Character = Player.Character or Player.CharacterAdded:Wait()
 local Mouse = Player:GetMouse()
 
-ProjectileCast.Client.Init()
+ProjectileCast.Client.Init() -->>: Initializes client-side
 
-ProjectileCast.Client.SetIgnoreList({Character, workspace.CurrentCamera})
+ProjectileCast.Client.SetIgnoreList({workspace.Camera, (...)}) -->>: Set raycast ignore list
+
+ProjectileCast.Client.SetTargetFilter(workspace.Camera) -->>: Set targetfilter
+
+ProjectileCast.Client.VisualizeCasts(false) -->>: Visualize the raycast (Set to true to enable.)
 
 Mouse.Button1Down:Connect(function(gameProcessed)
     if gameProcessed then return end
     ProjectileCast.Client.CastSingle({
-        StartPoint = Character.Head, -->>: StartPoint of bullet instance
-        EndPoint = Mouse.Hit.Position}) -->>: EndPoint of bullet instance
-
-    -->>: Startpoint, and Endpoint is required for the .CastSingle() method to function.
+        StartPoint = Character.Head,
+        EndPoint = Mouse.Hit.Position,
+        Damage = 10,
+        Velocity = 5,
+        Drop = 0.025})
+    -->>: There are more index properties for the .CastSingle({}) method. Check out the api documentation if you are interested.
 end)
 ```
 
