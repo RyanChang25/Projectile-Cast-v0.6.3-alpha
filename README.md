@@ -12,7 +12,7 @@ The installation process is very simple! All you have to do is grab the module a
 
 _Roblox Studio workflow_:
 
-1. Get [Projectile Cast](https://www.roblox.com/library/9866876932/Projectile-Cast) from the Roblox library or download the most [recent release](https://github.com/RyanChang25/Projectile-Cast-v0.4.1/releases/tag/v0.4.1).
+1. Get [Projectile Cast](https://www.roblox.com/library/9866876932/Projectile-Cast) from the Roblox library or download the most [recent release](https://github.com/RyanChang25/Projectile-Cast/releases).
 2. Add it into your project, and drop the module into the Replicated Storage.
 3. **All done!**
 
