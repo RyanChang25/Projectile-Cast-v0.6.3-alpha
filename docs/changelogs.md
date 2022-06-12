@@ -18,6 +18,8 @@
 
 ## v0.4.1-alpha
 
+- Published first release of Projectile Cast.
+
 - Integrated into Roblox library for Roblox Studio workflow support.
 
 ## v0.4.0-alpha
