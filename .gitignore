@@ -4,3 +4,6 @@
 #/src/ServerScriptService
 #/src/StarterPlayer
 #/src/ReplicatedStorage
+
+# Roblox Studio lock files
+/*.rbxlx.lock
