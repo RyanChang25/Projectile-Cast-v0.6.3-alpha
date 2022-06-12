@@ -3,4 +3,4 @@ local ProjectileCast = require(ReplicatedStorage.ProjectileCast)
 
 ProjectileCast.Server.SetRemotes()
 
-ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", "ExampleTarget2"})
+ProjectileCast.TargetSettings.SetTaggedTargets({"ExampleTarget1", (...)})
