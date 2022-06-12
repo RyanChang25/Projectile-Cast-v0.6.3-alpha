@@ -52,6 +52,8 @@ ProjectileCast.Client.Init()
 
 ProjectileCast.Client.SetIgnoreList({Character, workspace.CurrentCamera})
 
+ProjectileCast.Client.SetTargetFilter(workspace.Camera)
+
 Mouse.Button1Down:Connect(function(gameProcessed)
     if gameProcessed then return end
     ProjectileCast.Client.CastSingle({
