@@ -112,6 +112,7 @@ function Client.updateBullets(s)
 		bul.Anchored = true
 		local distance = (bullet.oldposition.p - bullet.position.p).magnitude
 		-->>: Gets the old position to look at the new position so we can CFrame it to the right orientation
+
 		bul.CFrame = CFrame.new(bullet.oldposition.p, bullet.position.p) * CFrame.new(0,0, -distance * 0.5)
 		-->>: Moves it forward half the distance so its in the middle of where the ray will be so its in the right place
 		-->>: Want the bullet to be in the middle of the ray since thats where the ray will be checking if it hit anything
@@ -146,19 +147,19 @@ function Client.updateBullets(s)
 			end
 			
 			table.insert(destroy, bullet.bullet)
-			table.insert(remove, i) --/tag bullet for removal
+			table.insert(remove, i) -->>: Tag bullet for removal
 
 		else
 			bullet.oldposition = bullet.position
 			if tick() > bullet.despawn then
-				table.insert(destroy, bullet.bullet) -- Tag bullet for destruction
-				table.insert(remove, i) -- Remove bullet for destruction
+				table.insert(destroy, bullet.bullet) -->>: Tag bullet for destruction
+				table.insert(remove, i) -->>: Remove bullet for destruction
 			end	
 		end
 
 	end
 	
-	for i, iteration in pairs(remove) do -- Remove tagged bullets
+	for i, iteration in pairs(remove) do -->>: Remove tagged bullets
 		table.remove(Client.getProjTable(), iteration-i+1)
 	end
 
@@ -195,7 +196,7 @@ function Client.Init()
 	end)
 	
 	game:GetService("RunService").RenderStepped:Connect(function(deltaT) 
-		local ratio = 60 / (1/deltaT) -- Fixed time step for independent framerate
+		local ratio = 60 / (1/deltaT) -->>: Fixed time step for independent framerate
 		Client.updateBullets(ratio)
 	end)
 	
