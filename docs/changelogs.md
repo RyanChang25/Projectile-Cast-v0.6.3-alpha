@@ -4,7 +4,7 @@
 
 - Fixed an `varargs` error in ProjectileCast.Client.lua.
 
-- Updated OOP syntax to be inlined with modern practices.
+- Updated OOP syntax to be inlined with industry standard practices.
 
 - Added new index property `Color` in `.CastSingle({})` method. Allows you to specify the color of the particles when hitting tagged targets.
 
