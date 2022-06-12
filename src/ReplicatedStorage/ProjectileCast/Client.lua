@@ -23,31 +23,33 @@ end
 
 function Client.newProj(plr, projectileTable) -->>: Create projectile object
 
-	local origin = CFrame.new(projectileTable.StartPoint.Position + Vector3.new(0,(projectileTable.YOffset or 0),0) + 
+	local self = setmetatable({}, Client)
+
+	self.origin = CFrame.new(projectileTable.StartPoint.Position + Vector3.new(0,(projectileTable.YOffset or 0),0) + 
 		projectileTable.StartPoint.CFrame.lookVector * (projectileTable.ZOffset or 1), 
 		projectileTable.EndPoint) * CFrame.Angles(0,math.rad(projectileTable.XOffset or 0),0) 
 
-	local bulletComp = {}
-	bulletComp.velocity = projectileTable.Velocity or 3
-	bulletComp.drop = projectileTable.Drop or 0.005
-	bulletComp.laps = 0
-	bulletComp.oldposition = origin
-	bulletComp.position = origin
-	bulletComp.despawn = tick() + (projectileTable.Despawn or 3)
-	bulletComp.character = plr.Character
-	bulletComp.damage = projectileTable.Damage or 5
-	bulletComp.hit = false
-	bulletComp.emitDebris = projectileTable.EmitDebris or 3
-	
-	bulletComp.bullet = projectileTable.Bullet ~= nil and projectileTable.Bullet:Clone() or script.Parent.Assets.FX:WaitForChild("Bullet"):Clone()
-	bulletComp.bullet.Parent = bulletParent
-	
-	bulletComp.decal = projectileTable.Decal or 4784881970
-	bulletComp.ignoreList = bulletIgnoreList
+	self.velocity = projectileTable.Velocity or 3
+	self.drop = projectileTable.Drop or 0.005
+	self.laps = 0
+	self.oldposition = self.origin
+	self.position = self.origin
+	self.despawn = tick() + (projectileTable.Despawn or 3)
+	self.character = plr.Character
+	self.damage = projectileTable.Damage or 5
+	self.hit = false
+	self.emitDebris = projectileTable.EmitDebris or 3
+	self.color = projectileTable.Color or Color3.fromRGB(255, 56, 56)
 
-	table.insert(bullets, bulletComp)
+	self.bullet = projectileTable.Bullet ~= nil and projectileTable.Bullet:Clone() or script.Parent.Assets.FX:WaitForChild("Bullet"):Clone()
+	self.bullet.Parent = bulletParent
+	
+	self.decal = projectileTable.Decal or 4784881970
+	self.ignoreList = bulletIgnoreList
 
-	return setmetatable(bulletComp, Client)
+	table.insert(bullets, self)
+
+	return self
 end
 
 function Client:WeldBulletHole(newray, color, id)
@@ -91,6 +93,19 @@ function Client.createBulletHole(id)
 	return bulletHole	
 end
 
+function Client.instanceVisualizedRay(bullet, distance)
+	if Visualize then
+		local VisualBullet = Instance.new("Part", workspace.Camera)
+		VisualBullet.Size = Vector3.new(0.25, 0.25, distance)
+		VisualBullet.Anchored = true
+		VisualBullet.CanCollide = false
+		VisualBullet.Color = Color3.fromRGB(255, 0, 0)
+		VisualBullet.CFrame = bullet.bullet.CFrame
+		VisualBullet.Name = "Visualize"
+		Debris:AddItem(VisualBullet, 5)
+	end
+end
+
 function Client.updateBullets(s)
 
 	for i,v in pairs(destroy) do
@@ -122,16 +137,7 @@ function Client.updateBullets(s)
 
 		local hit = workspace:FindPartOnRayWithIgnoreList(newray, bulletIgnoreList)
 
-		if Visualize then
-			local VisualBullet = Instance.new("Part", workspace.Camera)
-			VisualBullet.Size = Vector3.new(0.25, 0.25, distance)
-			VisualBullet.Anchored = true
-			VisualBullet.CanCollide = false
-			VisualBullet.Color = Color3.fromRGB(255, 0, 0)
-			VisualBullet.CFrame = bullet.bullet.CFrame
-			VisualBullet.Name = "Visualize"
-			Debris:AddItem(VisualBullet, 5)
-		end
+		Client.instanceVisualizedRay(bullet, distance)
 		
 		if hit and not hit:FindFirstAncestor(bullet.character.Name) then
 
@@ -141,7 +147,7 @@ function Client.updateBullets(s)
 						script.Parent.Assets:WaitForChild("Remotes"):WaitForChild("DamageEvent"):FireServer(hit, bullet.damage)
 					end)
 				end
-				bullet:WeldBulletHole(newray, Color3.new(1, 0.203922, 0.203922), bullet.decal)
+				bullet:WeldBulletHole(newray, bullet.color, bullet.decal)
 			else
 				bullet:WeldBulletHole(newray, hit.Color, bullet.decal)
 			end
@@ -159,7 +165,7 @@ function Client.updateBullets(s)
 
 	end
 	
-	for i, iteration in pairs(remove) do -->>: Remove tagged bullets
+	for i, iteration in pairs(remove) do -->>: Remove tagged bullets to prevent memory leaks
 		table.remove(Client.getProjTable(), iteration-i+1)
 	end
 
