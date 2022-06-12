@@ -4,7 +4,7 @@
 	
 	Coded and written by Ryanisawesome25 (21932606)
 	
-	API Documentation can be found at - https://github.com/RyanChang25/Projectile-Cast-v0.4.1
+	API Documentation can be found at - https://github.com/RyanChang25/Projectile-Cast
 	
 	Original Module - https://www.roblox.com/library/9866876932/Projectile-Cast
 	
