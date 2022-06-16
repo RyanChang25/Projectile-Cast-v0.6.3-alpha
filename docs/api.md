@@ -38,7 +38,7 @@ Property indexs are the same as the `.CastSingle({})` method except multiple pro
 
 ```lua
 -- Example Code
-ProjectileCast.Client.SetIgnoreList({[Instance] IgnoreInstance (...)})
+ProjectileCast.Client.SetIgnoreList({Instance, (...)})
 ```
 
 Sets a list of instances that the raycast from the projectile will ignore.
