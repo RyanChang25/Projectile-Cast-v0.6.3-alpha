@@ -30,9 +30,9 @@ Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting targe
 
 ```
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.CastMultiple({(...)})
+### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.CastMultiple({[Table](https://developer.roblox.com/en-us/api-reference/lua-docs/table) IndexProperties})
 
-Property indexs are the same as the `.CastSingle({(...)})` method except multiple projectiles will be fired at once.
+Property indexs are the same as the `.CastSingle({[Table](https://developer.roblox.com/en-us/api-reference/lua-docs/table) IndexProperties})` method except multiple projectiles will be fired at once.
 
 ### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetIgnoreList({[Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) IgnoreInstance, (...)})
 
