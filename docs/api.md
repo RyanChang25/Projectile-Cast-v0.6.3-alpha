@@ -25,14 +25,14 @@ Bullet = game.ReplicatedStorage.Bullet:Clone() , -->>: Get specific bullet model
 Sound = 168143115 -->>: Sound ID of gun shot. (Default: 168143115)
 Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting target. (Default: Color3.fromRGB(255, 55, 55))
 
--- You are not required to use all index properties of the table when using .CastSingle() method.
+-- You are not required to use all index properties of the table when using .CastSingle() function.
 -- So use whichever index property that fits in your situation.
 
 ```
 
 ### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.CastMultiple({[Table](https://developer.roblox.com/en-us/api-reference/lua-docs/table) IndexProperties})
 
-Property indexs are the same as the `Client.CastSingle({[Table] IndexProperties})` method except multiple projectiles will be fired at once.
+Property indexs are the same as the `Client.CastSingle({[Table] IndexProperties})` function except multiple projectiles will be fired at once.
 
 ### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetIgnoreList({[Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) IgnoreInstance, (...)})
 
