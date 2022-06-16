@@ -26,7 +26,7 @@ function Client.newProj(plr, projectileTable) -->>: Projectile class constructor
 	local self = setmetatable({}, Client)
 
 	self.origin = CFrame.new(projectileTable.StartPoint.Position + Vector3.new(0,(projectileTable.YOffset or 0),0) + 
-		projectileTable.StartPoint.CFrame.lookVector * (projectileTable.ZOffset or 1), 
+		projectileTable.StartPoint.CFrame.lookVector * (projectileTable.ZOffset or 0), 
 		projectileTable.EndPoint) * CFrame.Angles(0,math.rad(projectileTable.XOffset or 0),0) 
 
 	self.velocity = projectileTable.Velocity or 3
@@ -140,6 +140,8 @@ function Client.updateBullets(s)
 		instanceVisualizedRay(bullet, distance)
 		
 		if hit and not hit:FindFirstAncestor(bullet.character.Name) then
+	
+			-- print("hit = "..hit.Name..", hit.Parent = "..hit.Parent.Name)
 
 			if TargetSettings.GetTaggedTargets(hit) then
 				if game.Players.LocalPlayer.Character == bullet.character then	
