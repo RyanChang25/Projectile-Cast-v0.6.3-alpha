@@ -30,7 +30,7 @@ Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting targe
 
 Property indexs are the same as the `.CastSingle({})` method except multiple projectiles will be fired at once.
 
-#### `ProjectileCast.Client.SetIgnoreList({})`
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.SetIgnoreList({})
 
 ```lua
 -- Example Code
@@ -39,7 +39,7 @@ ProjectileCast.Client.SetIgnoreList({workspace.Camera (...)})
 
 Sets a list of instances that the raycast from the projectile will ignore.
 
-#### `ProjectileCast.Client.SetBulletParent()`
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.SetBulletParent()
 
 ```lua
 -- Example Code
@@ -48,7 +48,7 @@ ProjectileCast.Client.SetBulletParent(workspace.MyBulletFolder)
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
-#### `ProjectileCast.Client.VisualizeCasts(bool)`
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.VisualizeCasts(bool)
 
 ```lua
 -- Example Code
@@ -57,7 +57,7 @@ ProjectileCast.Client.VisualizeCasts(true)
 
 Allows you to visualize the ray casted (Will be performance heavy, so only turn on for debugging). Default will be false.
 
-#### `ProjectileCast.Client.SetTargetFilter(targetFilter) `
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.SetTargetFilter(targetFilter)
 
 ```lua
 -- Example Code
@@ -68,7 +68,7 @@ Allows you to specify targets that will be ignored by the mouse when calculating
 
 ## **Server Side API**
 
-#### `ProjectileCast.TargetSettings.SetTaggedTargets({})`
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.TargetSettings.SetTaggedTargets({})
 
 ```lua
 -- Example Code
