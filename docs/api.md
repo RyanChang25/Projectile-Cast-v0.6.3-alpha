@@ -38,7 +38,7 @@ Property indexs are the same as the `.CastSingle({})` method except multiple pro
 
 ```lua
 -- Example Code
-ProjectileCast.Client.SetIgnoreList({[Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) IgnoreInstance (...)})
+ProjectileCast.Client.SetIgnoreList({[Instance] IgnoreInstance (...)})
 ```
 
 Sets a list of instances that the raycast from the projectile will ignore.
