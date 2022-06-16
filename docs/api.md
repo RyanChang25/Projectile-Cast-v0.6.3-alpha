@@ -6,7 +6,7 @@
 
 ## Functions
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.CastSingle({(...)})
+### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.CastSingle({[Table](https://developer.roblox.com/en-us/api-reference/lua-docs/table) IndexProperties})
 
 ```lua
 -- Example Code
