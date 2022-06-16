@@ -38,16 +38,11 @@ Property indexs are the same as the `.CastSingle({(...)})` method except multipl
 
 Sets a list of instances that the raycast from the projectile will ignore.
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetBulletParent()
-
-```lua
--- Example Code
-ProjectileCast.Client.SetBulletParent(workspace.MyBulletFolder)
-```
+### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetBulletParent([Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) Parent)
 
 Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.VisualizeCasts(bool)
+### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.VisualizeCasts([Boolean](https://developer.roblox.com/en-us/articles/Boolean) Bool)
 
 ```lua
 -- Example Code
