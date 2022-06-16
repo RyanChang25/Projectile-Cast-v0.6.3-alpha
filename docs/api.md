@@ -72,9 +72,9 @@ Property indexs are the same as the `.CastSingle({})` method except multiple pro
 
 ## **Server Side API**
 
-## Properties
+### Properties
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.TargetSettings.SetTaggedTargets({})
+#### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.TargetSettings.SetTaggedTargets({})
 
 ```lua
 -- Example Code
