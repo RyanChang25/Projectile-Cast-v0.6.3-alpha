@@ -34,12 +34,7 @@ Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting targe
 
 Property indexs are the same as the `.CastSingle({})` method except multiple projectiles will be fired at once.
 
-#### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.SetIgnoreList({[Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) IgnoreInstance})
-
-```lua
--- Example Code
-ProjectileCast.Client.SetIgnoreList({ , (...)})
-```
+#### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.SetIgnoreList({[Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) IgnoreInstance, (...)})
 
 Sets a list of instances that the raycast from the projectile will ignore.
 
