@@ -44,19 +44,9 @@ Sets the parent of the projectile objects. Default will be `workspace.Camera`
 
 ### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.VisualizeCasts([Boolean](https://developer.roblox.com/en-us/articles/Boolean) Bool)
 
-```lua
--- Example Code
-ProjectileCast.Client.VisualizeCasts(true)
-```
-
 Allows you to visualize the ray casted (Will be performance heavy, so only turn on for debugging). Default will be false.
 
-### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetTargetFilter(targetFilter)
-
-```lua
--- Example Code
-ProjectileCast.Client.SetTargetFilter(workspace.Camera)
-```
+### [Void](https://developer.roblox.com/en-us/articles/Nil) Client.SetTargetFilter([Instance](https://developer.roblox.com/en-us/api-reference/datatype/Instance) TargetFilter)
 
 Allows you to specify targets that will be ignored by the mouse when calculating Mouse.Hit and Mouse.Target.
 
