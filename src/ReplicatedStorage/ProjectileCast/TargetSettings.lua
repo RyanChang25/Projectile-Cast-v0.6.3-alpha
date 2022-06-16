@@ -22,12 +22,31 @@ function Settings.SetTaggedTargets(value)
 	SetTags(value, "Targets")
 end
 
+function Settings.CheckHumanoid(hit)
+	local playerModel = hit:FindFirstAncestorOfClass("Model")
+	if playerModel and playerModel.PrimaryPart and playerModel.PrimaryPart.Name == "HumanoidRootPart" then
+		return playerModel
+	else 
+		return false 
+	end
+end
+
 function Settings.GetTaggedTargets(hit)
+	
+	local Character = Settings.CheckHumanoid(hit)
+	
 	for i,v in pairs (script["Targets"]:GetChildren()) do
-		if CollectionService:HasTag(hit, v.Value) or CollectionService:HasTag(hit.Parent, v.Value) then
+		if Character and CollectionService:HasTag(Character, v.Value) then
 			return true
 		end
 	end
+	
+	if #script["Targets"]:GetChildren() == 0 then
+		if Character then
+			return true
+		end
+	end
+
 end
 
 return Settings
