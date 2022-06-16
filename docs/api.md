@@ -2,7 +2,7 @@
 
 ## **Client Side API**
 
-#### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.CastSingle({})
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.CastSingle({})
 
 ```lua
 -- Example Code
@@ -26,7 +26,7 @@ Color = Color3.fromRGB(0, 55, 55)})  -->>: Color of particles when hitting targe
 
 ```
 
-#### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.CastMultiple({})
+### [Void](https://developer.roblox.com/en-us/articles/Nil) ProjectileCast.Client.CastMultiple({})
 
 Property indexs are the same as the `.CastSingle({})` method except multiple projectiles will be fired at once.
 
